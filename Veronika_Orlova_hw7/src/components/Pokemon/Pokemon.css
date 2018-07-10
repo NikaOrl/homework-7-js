@@ -1,0 +1,37 @@
+a:hover {
+    text-decoration: none;
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+}
+
+.pokemon-name:hover {
+    color: black;
+}
+
+.pokemon-img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.caught-btn {
+    display: block;
+    max-width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pokemon {
+    box-shadow: 0 0 5px 2px gainsboro;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.pokemon-list {
+    margin-top: 64px;
+}

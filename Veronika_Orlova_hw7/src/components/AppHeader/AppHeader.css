@@ -1,0 +1,15 @@
+.header-item {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.pokemon-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.myheader {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}

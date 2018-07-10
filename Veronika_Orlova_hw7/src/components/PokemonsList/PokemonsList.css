@@ -1,0 +1,10 @@
+.loadMore {
+    display: block;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #868585;
+}
