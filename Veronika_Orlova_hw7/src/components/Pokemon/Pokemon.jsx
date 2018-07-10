@@ -1,10 +1,11 @@
+import "./Pokemon.css";
+
 import React, { Component } from "react";
 import { Col, Button } from "react-bootstrap";
-import "./Pokemon.css";
 import { Link } from "react-router-dom";
 
 
-export default class Pokemon extends Component {
+class Pokemon extends Component {
     constructor(props) {
         super(props);
 
@@ -37,7 +38,7 @@ export default class Pokemon extends Component {
                             <figcaption className={"pokemon-name"}>{name.toUpperCase()}</figcaption>
                             <img className={"pokemon-img"} src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${pokemon.id}.png`}/>
                         </Link>
-                        <Button className={"caught-btn"} onClick={this.catchButtonCliked} disabled={ this.isDisabled()}>
+                        <Button className={"pokemon-caught"} onClick={this.catchButtonCliked} disabled={ this.isDisabled()}>
                             {"Catch"}
                         </Button>
                     </div>
@@ -46,3 +47,5 @@ export default class Pokemon extends Component {
         );
     }
 }
+
+export default Pokemon;

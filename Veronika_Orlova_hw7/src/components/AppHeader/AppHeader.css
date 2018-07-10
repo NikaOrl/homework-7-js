@@ -3,12 +3,12 @@
     text-transform: uppercase;
 }
 
-.pokemon-logo {
+.header-logo {
     height: 50px;
     width: 50px;
 }
 
-.myheader {
+.header {
     position: fixed;
     width: 100%;
     z-index: 1;

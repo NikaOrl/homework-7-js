@@ -1,10 +1,6 @@
-a:hover {
-    text-decoration: none;
-}
-
 .pokemon-name {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: grey;
 }
 
@@ -19,9 +15,8 @@ a:hover {
     height: auto;
 }
 
-.caught-btn {
+.pokemon-caught {
     display: block;
-    max-width: 100px;
     text-align: center;
     margin: 0 auto;
 }

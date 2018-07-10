@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PokemonsList from "../components/PokemonsList"
 
-export default class Pokemons extends Component {
+class AllPokemons extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -60,3 +60,5 @@ export default class Pokemons extends Component {
         );
     }
 }
+
+export default AllPokemons;

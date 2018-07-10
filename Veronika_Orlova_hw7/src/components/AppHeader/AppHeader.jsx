@@ -1,16 +1,17 @@
-import React, { Component } from "react";
 import "./AppHeader.css"
+
+import React, { Component } from "react";
 import {Nav, Navbar, NavItem} from  "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
-export default class AppHeader extends Component {
+class AppHeader extends Component {
     render() {
        return (
-           <div className="myheader">
+           <div className="header">
                 <Navbar collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Toggle />
-                        <img className="pokemon-logo" src="../../../src/img/pokemonlogo.png"/>
+                        <img className="header-logo" src="../../../src/img/pokemonlogo.png"/>
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav>
@@ -27,3 +28,5 @@ export default class AppHeader extends Component {
        )
     }
 }
+
+export default AppHeader;

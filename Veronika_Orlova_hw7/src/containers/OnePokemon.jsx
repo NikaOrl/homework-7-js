@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PokemonPage from "../components/PokemonPage"
 
-export default class PokemonDetail extends Component {
+class OnePokemon extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -9,7 +9,7 @@ export default class PokemonDetail extends Component {
         }
     }
 
-    getPokemon() {
+    componentDidMount() {
         const {id}= this.props.match.params;
         fetch(`http://localhost:3000/pokemons/${id}?_embed=caughtPokemons`)
             .then((response) => response.json())
@@ -19,9 +19,6 @@ export default class PokemonDetail extends Component {
                 });
             })
     }
-    componentDidMount() {
-        this.getPokemon();
-    }
 
     render() {
         let {pokemon} = this.state;
@@ -30,3 +27,5 @@ export default class PokemonDetail extends Component {
         )
     }
 }
+
+export default OnePokemon

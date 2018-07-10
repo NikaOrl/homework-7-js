@@ -1,9 +1,10 @@
+import "./PokemonsList.css"
+
 import React, { Component } from "react";
 import { Row, Button } from "react-bootstrap";
 import Pokemon from "../Pokemon";
-import "./PokemonsList.css"
 
-export default class PokemonsList extends Component {
+class PokemonsList extends Component {
     render() {
         let {pokemons, catchPokemon} = this.props;
         return  (
@@ -18,3 +19,5 @@ export default class PokemonsList extends Component {
         );
     }
 }
+
+export default PokemonsList;
