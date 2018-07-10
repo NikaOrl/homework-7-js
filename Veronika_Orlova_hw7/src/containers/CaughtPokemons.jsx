@@ -10,7 +10,7 @@ class CaughtPokemons extends Pokemons {
             .then((caughtPokemons) => {
                 this.setState({
                     pokemons: pokemons.concat(caughtPokemons.map((caughtPokemon)=> caughtPokemon.pokemon)),
-                    count: page + 1
+                    page: page + 1
                 })
             });
     }
